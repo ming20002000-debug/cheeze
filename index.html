@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-<title>데뷔 무대 월드컵</title>
+<title>데뷔곡 뮤직비디오 월드컵</title>
 <link rel="preconnect" href="https://cdn.jsdelivr.net">
 <link rel="stylesheet" as="style" crossorigin
   href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.css" />
@@ -16,8 +16,8 @@
   <!-- ================= 시작 화면 ================= -->
   <section id="screen-start" class="screen is-active">
     <div class="start-card">
-      <p class="start-eyebrow" id="siteSubtitle">여돌 데뷔 무대 VS 남돌 데뷔 무대</p>
-      <h1 class="start-title" id="siteTitle">데뷔 무대 월드컵</h1>
+      <p class="start-eyebrow" id="siteSubtitle">여돌 데뷔곡 VS 남돌 데뷔곡</p>
+      <h1 class="start-title" id="siteTitle">데뷔곡 뮤직비디오 월드컵</h1>
 
       <div class="field">
         <label for="roundSelect">총 라운드를 선택하세요</label>
@@ -30,7 +30,7 @@
         <button id="startBtn" class="btn btn-primary">시작하기</button>
       </div>
 
-      <p class="start-note">모든 대결은 <b>여자 아이돌 그룹 데뷔 무대 vs 남자 아이돌 그룹 데뷔 무대</b>로 진행됩니다 (3세대~5세대).</p>
+      <p class="start-note">모든 대결은 <b>여자 아이돌 그룹 데뷔곡 vs 남자 아이돌 그룹 데뷔곡</b>으로 진행됩니다 (3세대~5세대, 공식 뮤직비디오).</p>
     </div>
   </section>
 
@@ -51,6 +51,7 @@
         </div>
         <div class="pick-info">
           <p class="pick-name" id="nameLeft">-</p>
+          <p class="pick-song" id="songLeft">-</p>
           <p class="pick-group" id="groupLeft">-</p>
         </div>
         <button class="pick-select" id="pickLeft" type="button">
@@ -70,6 +71,7 @@
         </div>
         <div class="pick-info">
           <p class="pick-name" id="nameRight">-</p>
+          <p class="pick-song" id="songRight">-</p>
           <p class="pick-group" id="groupRight">-</p>
         </div>
         <button class="pick-select" id="pickRight" type="button">
@@ -93,6 +95,7 @@
           allowfullscreen></iframe>
       </div>
       <h2 class="result-name" id="resultName">-</h2>
+      <p class="result-song" id="resultSong">-</p>
       <p class="result-group" id="resultGroup">-</p>
 
       <div class="start-actions">

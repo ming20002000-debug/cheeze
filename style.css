@@ -292,6 +292,13 @@ button {
   font-weight: 700;
 }
 
+.pick-song {
+  margin: 3px 0 0;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--accent-teal);
+}
+
 .pick-group {
   margin: 2px 0 0;
   font-size: 12px;
@@ -369,6 +376,13 @@ button {
   margin: 18px 0 2px;
   font-size: 24px;
   font-weight: 800;
+}
+
+.result-song {
+  margin: 0 0 4px;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--accent-teal);
 }
 
 .result-group {
