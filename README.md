@@ -36,12 +36,12 @@ script.js    토너먼트 진행 로직 (건드릴 필요 없음)
 - 여돌 그룹 35팀, 남돌 그룹 35팀, 총 70팀 (3세대~5세대) — 정확히 32 vs 32로 64강까지 진행할 수 있습니다
 - 전부 각 그룹의 **데뷔곡 공식 뮤직비디오(Official MV)**로 채웠습니다 (기존 개인 직캠/방송 무대 영상에서 전면 교체)
 - 뮤직비디오는 그룹의 대표 공식 콘텐츠라 무대 직캠에서 겪었던 국내 재생 차단 문제가 거의 없습니다
-- 예외 3팀은 아래처럼 데이터가 다릅니다 (`data.js` 주석에도 표시):
-  - **EXID** — Whoz That Girl: 원 소속사(예당 엔터테인먼트)가 사실상 활동을 접어 채널이 소실된 상태라, 이번 교체 작업에서 정식 MV 업로드를 다시 확인하지 못해 기존에 쓰던 영상을 그대로 유지했습니다.
+- 예외 2팀은 아래처럼 데이터가 다릅니다 (`data.js` 주석에도 표시):
   - **ATEEZ** — 해적왕(Pirate King): 소속사(KQ Entertainment)가 이 곡을 'Official MV (Performance ver.)'로만 발매했고 별도의 스토리형 MV는 없어서, 그 영상을 그대로 사용했습니다.
   - **BOYNEXTDOOR** — One and Only: 데뷔 앨범(Who!)이 발매 주간 동안 곡 3개(But I Like You → One and Only → Serenade)를 순차적으로 타이틀곡처럼 밀었습니다. 언론에서 가장 자주 "데뷔곡"으로 언급하는 One and Only를 사용했습니다.
   - 그 외에 조사 과정에서 원래 알려진 제목과 달랐던 곡들(예: I.O.I는 Dream Girls, Kiss of Life는 Shhh, izna는 자체 제목곡 IZNA)도 정확한 데뷔 타이틀곡으로 바로잡았습니다.
 - 64강을 여돌 32 vs 남돌 32로 꽉 채우기 위해 남돌 그룹 6팀(THE BOYZ, AB6IX, WEi, TEMPEST, 8TURN, NEXZ)을 데뷔곡 공식 MV와 함께 추가해서 남돌도 35팀이 되었습니다.
+- 이후 사용자 피드백으로 6곳을 다시 손봤습니다: EXID(Whoz That Girl, 정식 MV로 교체), AOA(Elvis, 재생 안 되던 링크를 다른 MV로 교체), Cherry Bullet(Q&A, 재생 안 되던 링크를 다른 MV로 교체), Block B(데뷔곡을 "난리나"에서 실제 데뷔 타이틀곡인 "그대로 멈춰라!(Freeze!)"로 정정), CORTIS(곡을 "GO!"에서 "What You Want"로 변경), &TEAM(곡을 "FIREWORK"에서 "Under The Skin"으로 변경).
 
 ## 설정 바꾸기 (`config.js`)
 

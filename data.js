@@ -14,8 +14,8 @@
 //   start     : 영상이 몇 초부터 재생될지 (기본 0)
 //
 // 3세대~5세대(2012~2025 데뷔) 여자/남자 아이돌 그룹의 "데뷔곡 공식 뮤직비디오
-// (Official MV)"로 전부 교체했습니다. 예외 3곳만 진짜 MV가 없거나 애매하여
-// 각 항목 주석에 사유를 표시했습니다 (EXID, ATEEZ, BOYNEXTDOOR).
+// (Official MV)"로 전부 교체했습니다. 예외 2곳만 진짜 MV가 없거나 애매하여
+// 각 항목 주석에 사유를 표시했습니다 (ATEEZ, BOYNEXTDOOR).
 // 64강이 정확히 32(여) vs 32(남)으로 진행될 수 있도록 남돌 그룹을 35팀까지
 // 추가했습니다 (THE BOYZ, AB6IX, WEi, TEMPEST, 8TURN, NEXZ).
 // ============================================================
@@ -29,8 +29,8 @@ const CANDIDATES = [
   { id: "f05", name: "Oh My Girl", group: "3세대 · 2015.04 데뷔", song: "Cupid", gender: "female", youtubeId: "fCrCUv6rQ7I", start: 0 },
   { id: "f06", name: "Lovelyz", group: "3세대 · 2014.11 데뷔", song: "Candy Jelly Love", gender: "female", youtubeId: "HRQEs4vOIrY", start: 0 },
   { id: "f07", name: "WJSN", group: "3세대 · 2016.02 데뷔", song: "Mo Mo Mo (모모모)", gender: "female", youtubeId: "XuSCSFl4mqI", start: 0 },
-  { id: "f08", name: "EXID", group: "3세대 · 2012.02 데뷔", song: "Whoz That Girl", gender: "female", youtubeId: "j5H68OT93kk", start: 0 }, // 원 소속사(예당) 채널 소실로 정식 MV 업로드를 이번 세션에서 재검증하지 못해 기존 영상 유지
-  { id: "f09", name: "AOA", group: "3세대 · 2012.08 데뷔", song: "Elvis (엘비스)", gender: "female", youtubeId: "TG-yazbKKXY", start: 0 },
+  { id: "f08", name: "EXID", group: "3세대 · 2012.02 데뷔", song: "Whoz That Girl", gender: "female", youtubeId: "enrUVf_JTz8", start: 0 }, // 원 소속사(예당) 채널 소실로 당시 배급 채널(1theK/LOEN)에 남은 정식 MV로 교체
+  { id: "f09", name: "AOA", group: "3세대 · 2012.08 데뷔", song: "Elvis (엘비스)", gender: "female", youtubeId: "BNVxRkt3cmA", start: 0 }, // 재생 불가 링크 교체
   { id: "f10", name: "BLACKPINK", group: "3세대 · 2016.08 데뷔", song: "붐바야 (BOOMBAYAH)", gender: "female", youtubeId: "bwmSjveL3Lc", start: 0 },
   { id: "f11", name: "DIA", group: "3세대 · 2015.09 데뷔", song: "왠지 (Somehow)", gender: "female", youtubeId: "tzQv6TgwuFQ", start: 0 },
   { id: "f12", name: "PRISTIN", group: "3세대 · 2017.03 데뷔", song: "WEE WOO", gender: "female", youtubeId: "wLfHuClrQdI", start: 0 },
@@ -48,7 +48,7 @@ const CANDIDATES = [
   { id: "f24", name: "LE SSERAFIM", group: "4세대 · 2022.05 데뷔", song: "FEARLESS", gender: "female", youtubeId: "4vbDFu0PUew", start: 0 },
   { id: "f25", name: "NewJeans", group: "4세대 · 2022.07 데뷔", song: "Attention", gender: "female", youtubeId: "js1CtxSY38I", start: 0 },
   { id: "f26", name: "fromis_9", group: "4세대 · 2018.01 데뷔", song: "To Heart (두근두근)", gender: "female", youtubeId: "iFUHS1Ei7qw", start: 0 },
-  { id: "f27", name: "Cherry Bullet", group: "4세대 · 2019.01 데뷔", song: "Q&A", gender: "female", youtubeId: "KN2C9zNVoDY", start: 0 },
+  { id: "f27", name: "Cherry Bullet", group: "4세대 · 2019.01 데뷔", song: "Q&A", gender: "female", youtubeId: "7KdWuQyIEYk", start: 0 }, // 재생 불가 링크 교체
   { id: "f28", name: "Kep1er", group: "4세대 · 2022.01 데뷔", song: "WA DA DA", gender: "female", youtubeId: "n0j5NPptyM0", start: 0 },
   { id: "f29", name: "NMIXX", group: "4세대 · 2022.02 데뷔", song: "O.O", gender: "female", youtubeId: "3GWscde8rM8", start: 0 },
   { id: "f30", name: "BABYMONSTER", group: "5세대 · 2023.11 데뷔", song: "BATTER UP", gender: "female", youtubeId: "olDWm2veCrM", start: 0 },
@@ -68,7 +68,7 @@ const CANDIDATES = [
   { id: "m07", name: "iKON", group: "3세대 · 2015.09 데뷔", song: "리듬 타 (RHYTHM TA)", gender: "male", youtubeId: "tYI5CriE6XU", start: 0 }, // 데뷔 앨범 더블 타이틀곡 중 하나 (다른 하나는 APOLOGY)
   { id: "m08", name: "NCT 127", group: "3세대 · 2016.07 데뷔", song: "소방차 (Fire Truck)", gender: "male", youtubeId: "_psXn_VJ_AE", start: 0 },
   { id: "m09", name: "ASTRO", group: "3세대 · 2016.02 데뷔", song: "숨바꼭질 (Hide & Seek)", gender: "male", youtubeId: "7yCg9lanONo", start: 0 },
-  { id: "m10", name: "Block B", group: "3세대 · 2012.04 데뷔", song: "난리나 (Nanrina)", gender: "male", youtubeId: "grrpg_r1Nb8", start: 0 },
+  { id: "m10", name: "Block B", group: "3세대 · 2012.04 데뷔", song: "그대로 멈춰라! (Freeze!)", gender: "male", youtubeId: "ae_vi3hM6K0", start: 0 },
   { id: "m11", name: "Golden Child", group: "3세대 · 2017.09 데뷔", song: "담다디 (DamDaDi)", gender: "male", youtubeId: "lpMdr_5bygo", start: 0 },
   { id: "m12", name: "NU'EST", group: "3세대 · 2012.03 데뷔", song: "FACE", gender: "male", youtubeId: "YczfpTIBxZ4", start: 0 },
   { id: "m13", name: "Stray Kids", group: "4세대 · 2018.03 데뷔", song: "District 9", gender: "male", youtubeId: "u6unJQownW4", start: 0 },
@@ -76,7 +76,7 @@ const CANDIDATES = [
   { id: "m15", name: "TXT", group: "4세대 · 2019.03 데뷔", song: "어느날 머리에서 뿔이 자랐다 (CROWN)", gender: "male", youtubeId: "W3iSnJ663II", start: 0 },
   { id: "m16", name: "Xdinary Heroes", group: "4세대 · 2021.12 데뷔", song: "Happy Death Day", gender: "male", youtubeId: "fGubAEGT8f4", start: 0 },
   { id: "m17", name: "RIIZE", group: "5세대 · 2023.09 데뷔", song: "Get A Guitar", gender: "male", youtubeId: "iUw3LPM7OBU", start: 0 },
-  { id: "m18", name: "CORTIS", group: "5세대 · 2025.08 데뷔", song: "GO!", gender: "male", youtubeId: "WXS-o57VJ5w", start: 0 },
+  { id: "m18", name: "CORTIS", group: "5세대 · 2025.08 데뷔", song: "What You Want", gender: "male", youtubeId: "e2OpbOv_JiQ", start: 0 },
   { id: "m19", name: "ZEROBASEONE", group: "5세대 · 2023.07 데뷔", song: "In Bloom", gender: "male", youtubeId: "trzeUClQIIg", start: 0 },
   { id: "m20", name: "P1Harmony", group: "4세대 · 2020.10 데뷔", song: "Siren", gender: "male", youtubeId: "9ljkb_4A4O4", start: 0 },
   { id: "m21", name: "BOYNEXTDOOR", group: "5세대 · 2023.06 데뷔", song: "One and Only", gender: "male", youtubeId: "jizAb-SLvtM", start: 0 }, // 데뷔 앨범이 순차 발매한 3개 타이틀곡 중 하나 (다른 곡: But I Like You, Serenade)
@@ -84,7 +84,7 @@ const CANDIDATES = [
   { id: "m23", name: "TWS", group: "5세대 · 2024.03 데뷔", song: "첫 만남은 계획대로 되지 않아 (Plot Twist)", gender: "male", youtubeId: "hVAc1Vf2ITU", start: 0 },
   { id: "m24", name: "CRAVITY", group: "4세대 · 2020.04 데뷔", song: "Break All The Rules", gender: "male", youtubeId: "NFlceOv8LMU", start: 0 },
   { id: "m25", name: "NCT WISH", group: "5세대 · 2024.02 데뷔", song: "WISH", gender: "male", youtubeId: "hvQZs3k6Ytk", start: 0 },
-  { id: "m26", name: "&TEAM", group: "5세대 · 2023.12 데뷔", song: "FIREWORK", gender: "male", youtubeId: "uY-lOn0XwBg", start: 0 },
+  { id: "m26", name: "&TEAM", group: "5세대 · 2023.12 데뷔", song: "Under The Skin", gender: "male", youtubeId: "0utfT0nbuTA", start: 0 },
   { id: "m27", name: "VERIVERY", group: "4세대 · 2019.01 데뷔", song: "불러줘 (Ring Ring Ring)", gender: "male", youtubeId: "0NHj1g5taxk", start: 0 },
   { id: "m28", name: "ONEUS", group: "4세대 · 2019.01 데뷔", song: "발키리 (Valkyrie)", gender: "male", youtubeId: "k6msd9uh8nA", start: 0 },
   { id: "m29", name: "TREASURE", group: "4세대 · 2020.08 데뷔", song: "BOY", gender: "male", youtubeId: "JSAfPh1A25E", start: 0 },
